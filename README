@@ -1,0 +1,62 @@
+
+Images:
+
+http://cds.cern.ch/record/1211045?ln=en
+© 2009-2016 CERN (License: CC-BY-SA-4.0)
+0910152_02-A4-at-144-dpi.jpg  
+0910152_02-A5-at-72-dpi.jpg
+
+http://cds.cern.ch/record/1606502?ln=en
+eemm_run195099_evt137440354_ispy_3d-annotated-2.png
+© 2012 CERN, for the benefit of the CMS Collaboration (License: CC-BY-SA-4.0)
+
+Other info:
+http://robjhyndman.com/hyndsight/beamer-poster/
+https://github.com/deselaers/latex-beamerposter
+
+Dimensions:
+
+One column:
+
+\begin{textblock}{78.0}(4,110)
+\end{textblock}
+
+Two columns:
+
+ 4                         2
+<--><------- 38 --------><-><------- 38 ------->
+|  |                      | |                   |
+0  4                     42 44                  82
+
+\begin{textblock}{38.0}(4,77)
+\end{textblock}
+\begin{textblock}{38.0}(44,77)
+\end{textblock}
+
+or three columns:
+
+\begin{textblock}{24.0}(4,34)
+\end{textblock}
+
+\begin{textblock}{24.0}(30,34)
+\end{textblock}
+
+\begin{textblock}{24.0}(56,34)
+\end{textblock}
+
+or four columns:
+
+84 -4 -4 -2 -2 -2 = 70 => 17.5 width
+
+\begin{textblock}{17.5}(4,54)
+\end{textblock}
+
+\begin{textblock}{17.5}(23.5,54)
+\end{textblock}
+
+\begin{textblock}{17.5}(43,54)
+\end{textblock}
+
+\begin{textblock}{17.5}(62.5,54)
+\end{textblock}
+
