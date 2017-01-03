@@ -1,4 +1,4 @@
-tex:
+tex: si2-2016 si2-2017
 
 si2-2016:
 	pdflatex diana-si2-pi-workshop-2016.tex
