@@ -69,9 +69,7 @@ symmetries or extend beyond the 3 spatial dimensions we know? What
 is the mechanism stabilizing the Higgs mass from enormous quantum
 corrections? Are neutrinos, whose only SM interactions are weak,
 their own anti-particles? Can the theories of gravity and quantum
-mechanics be reconciled? Planned and running HEP experiments 
-aim to answer these questions over the next 20 years.
-~~~ \\
+mechanics be reconciled?
 ~~~ \\
 \begin{figure}[tbph]
 \centering
@@ -105,31 +103,20 @@ by more than a factor of 100.
 \end{block}
 \end{textblock}
 
-\begin{textblock}{78.0}(4,52)
-\begin{block}{Project Goals}
+\begin{textblock}{78.0}(4,49)
+\begin{block}{Project Status}
 \end{block}
 \end{textblock}
 
-\begin{textblock}{22.5}(4,55.5)
-\textcolor{mybluelabel}{\bf Collaborative Analyses} \\
-Establish infrastructure for a higher-level of collaborative analysis, building on the successful patterns used for the Higgs boson discovery and enabling a deeper communication between the theoretical community and the experimental community. 
+\begin{textblock}{22.5}(4,52.5)
+\textcolor{mybluelabel}{\bf Serving the Community} \\
+Improve on existing analysis techniques, particularly by improving the speed of ROOT IO.
+ROOT's APIs were designed around maximum flexibility.  We are working to modernize the API
+and provide faster data rates for simpler objects.
+By decreasing the time-to-delivery of results, we aim to decrease the time to science.
 \end{textblock}
 
-\begin{textblock}{12.5}(27.5,55)
-\begin{figure}[tbph]
-\centering
-\includegraphics[width=0.8\textwidth]{collaborate.jpg}
-\end{figure}
-\end{textblock}
-
-%%%
-
-\begin{textblock}{22.5}(4,68)
-\textcolor{mybluelabel}{\bf Faster Processing} \\
-Increase the CPU and IO performance needed to reduce the iteration time so crucial to exploring new ideas
-\end{textblock}
-
-\begin{textblock}{12.5}(27.5,68)
+\begin{textblock}{12.5}(27.5,52)
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.6\textwidth]{faster-processing.jpg}
@@ -138,56 +125,64 @@ Increase the CPU and IO performance needed to reduce the iteration time so cruci
 
 %%%
 
-\begin{textblock}{22.5}(4,77)
-\textcolor{mybluelabel}{\bf Reproducible Analyses} \\
-Streamline efforts associated to reproducibility, analysis preservation, and data preservation by making these native concepts in the tools.
+\begin{textblock}{22.5}(4,68)
+\textcolor{mybluelabel}{\bf Bridging to Big Data} \\
+The ``Big Data" ecosystem is full of clever techniques and ideas of value to data-intensive science.
+Many build on techniques that are in use in HEP but are better-supported or hve larger communities.
+Unfortunately, the tooling to access HEP data in these frameworks is non-existent or immature;
+DIANA is working to remedy this.
 \end{textblock}
 
-\begin{textblock}{12.5}(27.5,77)
-\begin{figure}[tbph]
-\centering
-\includegraphics[width=0.8\textwidth]{reproducible-ss.png}
-\end{figure}
-\end{textblock}
-
-%%%
-
-\begin{textblock}{22.5}(44,55.5)
-\textcolor{mybluelabel}{\bf Interoperability} \\
-Improve the interoperability of HEP tools with the larger scientific software ecosystem, incorporating best practices and algorithms from other disciplines into HEP.
-\end{textblock}
-
-\begin{textblock}{12.5}(67.5,55)
+\begin{textblock}{12.5}(27.5,70)
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.8\textwidth]{interoperable.jpg}
 \end{figure}
 \end{textblock}
 
-\begin{textblock}{23}(44,68)
-\textcolor{mybluelabel}{\bf Better Software} \\
-Develop software to effectively exploit emerging many- and multi-core hardware. 
-Promote the concept of software as a research product.
+%%%
+
+\begin{textblock}{22.5}(44,52.5)
+\textcolor{mybluelabel}{\bf High-Level Tools} \\
+Improve the interoperability of HEP tools with the larger scientific software ecosystem, incorporating best practices and algorithms from other disciplines into HEP.
+We're attempting to pull together myriad HEP software packages written in Python into a common interface called Scikit-HEP.
+The goal is to make Pythonic HEP software easier to discover.
 \end{textblock}
 
-\begin{textblock}{12.0}(68,68)
+\begin{textblock}{12.5}(67.5,52)
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.9\textwidth]{relationships_nolabels.pdf}
+\end{figure}
+\end{textblock}
+
+\begin{textblock}{23}(44,68)
+\textcolor{mybluelabel}{\bf New Techniques} \\
+We are developing of new tools and methods for
+high-level statistical analysis in particle physics. Our activities
+include research for simulator-based inference, machine learning for
+particle physics, high-level software for efficient numerical
+computations, and education efforts in these respective domains.
+\end{textblock}
+
+\begin{textblock}{12.0}(68,70)
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.9\textwidth]{better-software.jpg}
 \end{figure}
 \end{textblock}
 
-\begin{textblock}{22.5}(44,77)
-\textcolor{mybluelabel}{\bf Training} \\
-Provide training for students in all of our core research topics.
-\end{textblock}
+%\begin{textblock}{22.5}(44,77)
+%\textcolor{mybluelabel}{\bf Training} \\
+%Provide training for students in all of our core research topics.
+%\end{textblock}
 
-\begin{textblock}{12.5}(67.5,77)
-\begin{figure}[tbph]
-\centering
-\includegraphics[width=0.8\textwidth]{training.jpg}
-\end{figure}
-\end{textblock}
+%\begin{textblock}{12.5}(67.5,77)
+%\begin{figure}[tbph]
+%\centering
+%\includegraphics[width=0.8\textwidth]{training.jpg}
+%\end{figure}
+%\end{textblock}
 
 
 
@@ -196,26 +191,22 @@ Provide training for students in all of our core research topics.
 \begin{textblock}{38.0}(44,25.0)
 \begin{block}{The HEP Analysis Software Ecosystem}
 ROOT (\url{https://root.cern.ch}) is
-the {\em de-facto} home for most community analysis
+home for most community analysis
 software developed in particle physics and related fields. Begun at CERN in 1995,
 it provides a sophisticated data format and serialization technology
-%(used, as an example, for 200 PB of LHC Run 1 data)
 as well as key software tools for
 data modeling, likelihood fitting, statistics and
 multivariate data analysis. It also has a broader range of
-functionalities, not strictly tied to the data-intensive aspects
-of our science, including interactive C++ analysis, histogramming,
-graphics (2D and 3D), math libraries (matrix algebra), image manipulation,
-and tools for distributed computing. Despite many pioneering and
+functionalities, not strictly tied to the data-intensive aspects,
+including interactive C++ analysis, histogramming,
+graphics, math libraries, image manipulation,
+and tools for distributed computing. Despite many
 innovative features, the components are seen as too coupled,
 and limited by design decisions taken 20 years ago.
 Given the challenges from technology evolution and analysis complexity,
-we are at a point in the software lifecycle where large changes are needed,
+large changes are needed,
 much as ROOT replaced an earlier generation of
-FORTRAN-based tools (PAW, HBOOK).
-%ROOT is, however, the starting
-%point for any plan to enable the our community to
-%exploit exabyte-scale data sets.
+FORTRAN-based tools.
 DIANA/HEP is building on and improving these
 community libraries, moving other existing software elements into
 community libraries, and developing additional new tools.
