@@ -29,7 +29,8 @@
 %\includegraphics[width=0.45\textwidth]{images/dianahep-logo.png}
 \includegraphics[width=0.70\textwidth]{images/diana-hep-06-logo-horizontal.png}
 \end{figure}
-\url{http://diana-hep.org}
+\href{http://diana-hep.org}{http://diana-hep.org}
+%\url{http://diana-hep.org}
 \end{center}
 \end{textblock}
 
@@ -70,6 +71,15 @@ is the mechanism stabilizing the Higgs mass from enormous quantum
 corrections? Are neutrinos, whose only SM interactions are weak,
 their own anti-particles? Can the theories of gravity and quantum
 mechanics be reconciled?
+%questions remain wide open, amongst them: 
+%\begin{itemize} 
+%\item What is the dark matter which pervades the universe? 
+%\item Does space-time have additional symmetries or extend beyond the 3 spatial dimensions we know? 
+%\item What is the mechanism stabilizing the Higgs mass from enormous quantum
+%corrections? 
+%\item Are neutrinos, whose only SM interactions are weak, their own anti-particles? 
+%\item Can the theories of gravity and quantum mechanics be reconciled?
+%\end{itemize} 
 ~~~ \\
 \begin{figure}[tbph]
 \centering
@@ -92,7 +102,7 @@ for experiments which acquire, reduce, and analyze petabytes of
 data. Improving performance, interoperability, and collaborative
 tools through modifications and additions to ROOT and other packages
 broadly used by the community will allow users to more fully exploit
-the data being acquired at CERN's Large Hadron Collider (LHC) and
+the data being acquired at CERN's LHC and
 other facilities. The LHC experiments, for example, use nearly 0.5 Exabyte of
 storage today, and planned upgrades through the 2020s will increase this
 by more than a factor of 100. 
@@ -103,81 +113,114 @@ by more than a factor of 100.
 \end{block}
 \end{textblock}
 
+\begin{textblock}{38.0}(44,25.0)
+\begin{block}{The HEP Analysis Software Ecosystem}
+ROOT (\href{https://root.cern.ch}{https://root.cern.ch}) is
+home for most community analysis
+software developed in particle physics and related fields. Begun at CERN in 1995,
+it provides a sophisticated data format and serialization technology
+as well as key software tools for
+data modeling, likelihood fitting, statistics and
+multivariate data analysis. It also has a broader range of
+functionalities, not strictly tied to the data-intensive aspects,
+including interactive C++ analysis, histogramming,
+graphics, math libraries, image manipulation,
+and tools for distributed computing. 
+%Despite many
+%innovative features, the components are seen as too coupled,
+%and limited by design decisions taken 20 years ago.
+Given the challenges from technology evolution and analysis complexity,
+%large changes are needed,
+%much as ROOT replaced an earlier generation of
+%FORTRAN-based tools.
+DIANA/HEP is building on and improving these
+community libraries, moving other existing software elements into
+community libraries, and developing additional new tools. We are also working to strengthen and grow the wider HEP software development community by building sustainable collaborations which extend beyond the DIANA/HEP project.
+\end{block}
+\end{textblock}
+
+
+
+
+
 \begin{textblock}{78.0}(4,49)
 \begin{block}{Project Status}
 \end{block}
 \end{textblock}
 
-\begin{textblock}{22.5}(4,52.5)
-\textcolor{mybluelabel}{\bf Serving the Community} \\
-Improve on existing analysis techniques, particularly by improving the speed of ROOT IO.
-ROOT's APIs were designed around maximum flexibility.  We are working to modernize the API
+\begin{textblock}{22.5}(5.5,52.5)
+\textcolor{mybluelabel}{\bf Improved Performance} \\
+In order to accelerate existing analysis techniques, we are improving the speed of ROOT IO.
+%ROOT's APIs were designed around maximum flexibility.  
+We are working to modernize the API
 and provide faster data rates for simpler objects.
 By decreasing the time-to-delivery of results, we aim to decrease the time to science.
 \end{textblock}
 
-\begin{textblock}{12.5}(27.5,52)
+\begin{textblock}{12.5}(29,53)
 \begin{figure}[tbph]
 \centering
-\includegraphics[width=0.6\textwidth]{images/faster-processing.jpg}
+\includegraphics[width=0.7\textwidth]{images/faster-processing.jpg}
 \end{figure}
 \end{textblock}
 
 %%%
 
-\begin{textblock}{22.5}(4,68)
+\begin{textblock}{22.5}(5.5,65.5)
 \textcolor{mybluelabel}{\bf Bridging to Big Data} \\
 The ``Big Data" ecosystem is full of clever techniques and ideas of value to data-intensive science.
-Many build on techniques that are in use in HEP but are better-supported or hve larger communities.
-Unfortunately, the tooling to access HEP data in these frameworks is non-existent or immature;
-DIANA is working to remedy this.
+Many build on techniques that are in use in HEP but are better-supported or have larger communities.
+Unfortunately, the tooling to access HEP data in these frameworks non-existent or immature;
+DIANA is working to remedy this through tools like \href{https://github.com/diana-hep/spark-root}{Spark-ROOT} and \href{http://histogrammar.org/}{Histogrammar}.
+With \href{https://github.com/diana-hep/femtocode}{Femtocode} and Fermiscope we are exploring how HEP and Big Data tools together can enable new and powerful ways of working.
 \end{textblock}
 
-\begin{textblock}{12.5}(27.5,70)
+\begin{textblock}{12.5}(29,67.5)
 \begin{figure}[tbph]
 \centering
-\includegraphics[width=0.8\textwidth]{images/interoperable.jpg}
-\end{figure}
-\end{textblock}
-
-%%%
-
-\begin{textblock}{22.5}(44,52.5)
-\textcolor{mybluelabel}{\bf High-Level Tools} \\
-Improve the interoperability of HEP tools with the larger scientific software ecosystem, incorporating best practices and algorithms from other disciplines into HEP.
-We're attempting to pull together myriad HEP software packages written in Python into a common interface called Scikit-HEP.
-The goal is to make Pythonic HEP software easier to discover.
-\end{textblock}
-
-\begin{textblock}{12.5}(67.5,52)
-\begin{figure}[tbph]
-\centering
+%\includegraphics[width=0.8\textwidth]{images/interoperable.jpg}
 \includegraphics[width=0.9\textwidth]{images/relationships_nolabels.png}
 \end{figure}
 \end{textblock}
 
-\begin{textblock}{23}(44,68)
+%%%
+
+\begin{textblock}{23}(45.5,68)
+\textcolor{mybluelabel}{\bf High-Level Tools} \\
+Improve the interoperability of HEP tools with the larger scientific software ecosystem, incorporating best practices and algorithms from other disciplines into HEP.
+We're attempting to pull together myriad HEP software packages written in Python into a common interface called \href{http://scikit-hep.org/}{Scikit-HEP}.
+The goal is to make Pythonic HEP software easier to discover and thus build a broader HEP Python development community.
+\end{textblock}
+
+\begin{textblock}{12.0}(69.5,70)
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.9\textwidth]{images/scikit-hep-logo_800.png}
+\end{figure}
+\end{textblock}
+
+\begin{textblock}{22.5}(45.5,52.5)
 \textcolor{mybluelabel}{\bf New Techniques} \\
 We are developing of new tools and methods for
 high-level statistical analysis in particle physics. Our activities
-include research for simulator-based inference, machine learning for
-particle physics, high-level software for efficient numerical
+include research and tools for simulator-based inference (\href{http://diana-hep.org/carl/}{Carl}), machine 
+learning for particle physics (\href{https://scikit-optimize.github.io/}{Scikit-Optimize}), high-level software for efficient numerical
 computations, and education efforts in these respective domains.
 \end{textblock}
 
-\begin{textblock}{12.0}(68,70)
+\begin{textblock}{12.5}(69,54)
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.9\textwidth]{images/better-software.jpg}
 \end{figure}
 \end{textblock}
 
-%\begin{textblock}{22.5}(44,77)
+%\begin{textblock}{22.5}(45.5,77)
 %\textcolor{mybluelabel}{\bf Training} \\
 %Provide training for students in all of our core research topics.
 %\end{textblock}
 
-%\begin{textblock}{12.5}(67.5,77)
+%\begin{textblock}{12.5}(69,77)
 %\begin{figure}[tbph]
 %\centering
 %\includegraphics[width=0.8\textwidth]{images/training.jpg}
@@ -188,36 +231,8 @@ computations, and education efforts in these respective domains.
 
 
 
-\begin{textblock}{38.0}(44,25.0)
-\begin{block}{The HEP Analysis Software Ecosystem}
-ROOT (\url{https://root.cern.ch}) is
-home for most community analysis
-software developed in particle physics and related fields. Begun at CERN in 1995,
-it provides a sophisticated data format and serialization technology
-as well as key software tools for
-data modeling, likelihood fitting, statistics and
-multivariate data analysis. It also has a broader range of
-functionalities, not strictly tied to the data-intensive aspects,
-including interactive C++ analysis, histogramming,
-graphics, math libraries, image manipulation,
-and tools for distributed computing. Despite many
-innovative features, the components are seen as too coupled,
-and limited by design decisions taken 20 years ago.
-Given the challenges from technology evolution and analysis complexity,
-large changes are needed,
-much as ROOT replaced an earlier generation of
-FORTRAN-based tools.
-DIANA/HEP is building on and improving these
-community libraries, moving other existing software elements into
-community libraries, and developing additional new tools.
-\end{block}
-\end{textblock}
 
-
-
-%\begin{textblock}{38.0}(44,52)
-%\begin{textblock}{56.0}(4,90)
-\begin{textblock}{38.0}(4,85.5)
+\begin{textblock}{38.0}(4,85)
 \begin{block}{Project Team}
 \begin{itemize}
 \item Peter Elmer (Lead PI) - {\it Princeton Univ., Dept. of Physics}
@@ -236,8 +251,7 @@ community libraries, and developing additional new tools.
 \end{block}
 \end{textblock}
 
-
-\begin{textblock}{38.0}(44,85.5)
+\begin{textblock}{38.0}(44,85)
 \begin{block}{Advisory Board}
 \begin{itemize}
 \item Amber Boehnlein - {\it CIO, Thomas Jefferson National Accelerator Facility}
@@ -250,19 +264,35 @@ community libraries, and developing additional new tools.
 \end{textblock}
 
 
-%\begin{textblock}{78.0}(4,111)
-%\begin{block}{Acknowledgement}
-%This project is supported by National Science Foundation grants ACI-1450310, ACI-1450319, ACI-1450323, and ACI-1450377. Any opinions, findings, conclusions or recommendations expressed in this material are those of the developers and do not necessarily reflect the views of the National Science Foundation.
-%\end{block}
-%\end{textblock}
 
-\begin{textblock}{38.0}(44,102)
+\begin{textblock}{38.0}(44,101.5)
 \begin{block}{Acknowledgement}
 This project is supported by National Science Foundation grants ACI-1450310, ACI-1450319, ACI-1450323, and ACI-1450377. Any opinions, findings, conclusions or recommendations expressed in this material are those of the developers and do not necessarily reflect the views of the National Science Foundation.
 \end{block}
 \end{textblock}
 
+% http://diana-hep.org/downloads/diana-si2-pi-workshop-2017.pdf
+% goo.gl/KxSovq
 
+
+\begin{textblock}{10.0}(44,112)
+\includegraphics[width=0.4\textwidth]{images/si2-2017-poster-qr.png}
+\end{textblock}
+
+%\begin{textblock}{18.0}(54,112)
+\begin{textblock}{24.0}(50,112)
+%\includegraphics[width=0.45\textwidth]{images/si2-2017-poster-qr.png}
+\begin{flushleft}
+Online version of this poster with clickable links: \\
+\href{http://goo.gl/KxSovq}{http://goo.gl/KxSovq}
+\end{flushleft}
+\end{textblock}
+
+\begin{textblock}{10.0}(72,111.5)
+\begin{flushright}
+\includegraphics[width=0.4\textwidth]{images/nsf1.jpg}
+\end{flushright}
+\end{textblock}
 
 
 \end{frame}
