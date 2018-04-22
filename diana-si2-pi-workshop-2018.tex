@@ -144,31 +144,27 @@ community libraries, and developing additional new tools. We are also working to
 
 \begin{textblock}{22.5}(5.5,52.5)
 \textcolor{mybluelabel}{\bf Improved Performance} \\
-In order to accelerate existing analysis techniques, we are improving the speed of ROOT IO.
-%ROOT's APIs were designed around maximum flexibility.  
-We are working to modernize the API
-and provide faster data rates for simpler objects.
-By decreasing the time-to-delivery of results, we aim to decrease the time to science.
+To reduce the time to scientific discovery and to enable more in-depth analyses, we are increasing the rate of access to ROOT data files. This includes streamlined access to simpler data types (uproot and BulkIO) and faster compression algorithms (LZ4 and ZSTD). These efforts have already provided factors-of-several improvements.
 \end{textblock}
 
 \begin{textblock}{12.5}(29,53)
 \begin{figure}[tbph]
 \centering
-\includegraphics[width=0.7\textwidth]{images/faster-processing.jpg}
+\includegraphics[width=\textwidth]{images/getentry-uproot-bulkio.pdf}
+
+\vspace{0.5 cm}
+\includegraphics[width=\textwidth]{images/compr.png}
 \end{figure}
 \end{textblock}
 
 %%%
 
-\begin{textblock}{22.5}(5.5,65.5)
+\begin{textblock}{22.5}(5.5,67.5)
 \textcolor{mybluelabel}{\bf Bridging to Big Data} \\
-The ``Big Data" ecosystem is full of clever techniques and ideas of value to data-intensive science.
-Many build on techniques that are in use in HEP but are better-supported or have larger communities.
-Unfortunately, the tooling to access HEP data in these frameworks non-existent or immature;
-DIANA is working to remedy this through tools like \href{https://github.com/diana-hep/spark-root}{Spark-ROOT}, \href{https://github.com/scikit-hep/uproot}{uproot}, and \href{https://github.com/diana-hep/oamap}{OAMap}.
+``Big Data'' software in industry, such as the Spark and scientific Python ecosystems, both complement and reproduce functionality of software traditionally developed within HEP. To give physicists more options and reduce maintenance burdens within HEP, DIANA is building bridges between HEP software and the Big Data ecosystems: \href{https://github.com/diana-hep/spark-root}{Spark-ROOT} to Spark and \href{https://github.com/scikit-hep/uproot}{uproot}/\href{https://github.com/diana-hep/oamap}{OAMap} to Numpy, Numba, and Dask.
 \end{textblock}
 
-\begin{textblock}{12.5}(29,67.5)
+\begin{textblock}{12.5}(29,68.5)
 \begin{figure}[tbph]
 \centering
 %\includegraphics[width=0.8\textwidth]{images/interoperable.jpg}
@@ -180,20 +176,21 @@ DIANA is working to remedy this through tools like \href{https://github.com/dian
 
 \begin{textblock}{23}(45.5,68)
 \textcolor{mybluelabel}{\bf High-Level Tools} \\
-Improve the interoperability of HEP tools with the larger scientific software ecosystem, incorporating best practices and algorithms from other disciplines into HEP.
-We're attempting to pull together myriad HEP software packages written in Python into a common interface called \href{http://scikit-hep.org/}{Scikit-HEP}.
-The goal is to make Pythonic HEP software easier to discover and thus build a broader HEP Python development community.
+Computing issues can get in the way of a focus on physics, especially for new students who must learn both at the same time. We are therefore striving to present HEP analysis with higher-level interfaces. \href{http://scikit-hep.org/}{Scikit-HEP} incorporates HEP techniques in Pythonic idioms, \href{https://github.com/scikit-hep/uproot}{uproot} provides access to ROOT data as Numpy and Pandas abstractions, and \href{https://github.com/diana-hep/oamap}{OAMap} compiles object-centric user code into fast array operations.
 \end{textblock}
 
-\begin{textblock}{12.0}(69.5,70)
+\begin{textblock}{12.0}(69.5,67)
 \begin{figure}[tbph]
 \centering
-\includegraphics[width=0.9\textwidth]{images/scikit-hep-logo_800.png}
+\includegraphics[width=0.8\textwidth]{images/scikit-hep-logo_800.png}
+
+\vspace{1 cm}
+\includegraphics[width=0.8\textwidth]{images/uproot-logo.pdf}
 \end{figure}
 \end{textblock}
 
 \begin{textblock}{22.5}(45.5,52.5)
-\textcolor{mybluelabel}{\bf New Techniques} \\
+\textcolor{mybluelabel}{\bf New Statistical Techniques} \\
 We are developing of new tools and methods for
 high-level statistical analysis in particle physics. Our activities
 include research and tools for simulator-based inference (\href{http://diana-hep.org/carl/}{Carl}), machine 
