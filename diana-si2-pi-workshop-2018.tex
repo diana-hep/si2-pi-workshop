@@ -20,7 +20,7 @@
 %\date{}
 
 \begin{document}
-\begin{frame}{} 
+\begin{frame}{}
 
 \begin{textblock}{20}(2,2)
 \begin{center}
@@ -46,7 +46,7 @@ Data-Intensive Analysis for High Energy Physics (DIANA/HEP)
 \begin{textblock}{84.0}(6,5)
 \begin{center}
 \begin{Large}
-PIs: Peter Elmer (Princeton U.), Brian Bockelman (U.Nebraska-Lincoln), \\ 
+PIs: Peter Elmer (Princeton U.), Brian Bockelman (U.Nebraska-Lincoln), \\
 Kyle Cranmer (NYU), Mike Sokoloff (U.Cincinnati)
 \end{Large}
 \end{center}
@@ -62,7 +62,7 @@ Collider (LHC), where we do our research, represent a huge step
 forward in our ability to answer these questions. The discovery of
 the Higgs boson, the observation of exceedingly rare decays of B
 mesons, and exclusion of countless theories beyond the Standard
-Model (SM) of particle physics demonstrate that these experiments
+Model (SM) of particle physics demonstrate that these facilities
 deliver results. However, the most interesting fundamental physics
 questions remain wide open, amongst them: What is the dark matter
 which pervades the universe? Does space-time have additional
@@ -71,15 +71,15 @@ is the mechanism stabilizing the Higgs mass from enormous quantum
 corrections? Are neutrinos, whose only SM interactions are weak,
 their own anti-particles? Can the theories of gravity and quantum
 mechanics be reconciled?
-%questions remain wide open, amongst them: 
-%\begin{itemize} 
-%\item What is the dark matter which pervades the universe? 
-%\item Does space-time have additional symmetries or extend beyond the 3 spatial dimensions we know? 
+%questions remain wide open, amongst them:
+%\begin{itemize}
+%\item What is the dark matter which pervades the universe?
+%\item Does space-time have additional symmetries or extend beyond the 3 spatial dimensions we know?
 %\item What is the mechanism stabilizing the Higgs mass from enormous quantum
-%corrections? 
-%\item Are neutrinos, whose only SM interactions are weak, their own anti-particles? 
+%corrections?
+%\item Are neutrinos, whose only SM interactions are weak, their own anti-particles?
 %\item Can the theories of gravity and quantum mechanics be reconciled?
-%\end{itemize} 
+%\end{itemize}
 ~~~ \\
 \begin{figure}[tbph]
 \centering
@@ -103,7 +103,7 @@ broadly used by the community will allow users to more fully exploit
 the data being acquired at CERN's LHC and
 other facilities. The LHC experiments, for example, use nearly 0.5 Exabyte of
 storage today, and planned upgrades through the 2020s will increase this
-by more than a factor of 100. 
+by more than a factor of 100.
 \end{block}
 \end{textblock}
 
@@ -119,7 +119,7 @@ multivariate data analysis. It also has a broader range of
 functionalities, not strictly tied to the data-intensive aspects,
 including interactive C++ analysis, histogramming,
 graphics, math libraries, image manipulation,
-and tools for distributed computing. 
+and tools for distributed computing.
 %Despite many
 %innovative features, the components are seen as too coupled,
 %and limited by design decisions taken 20 years ago.
@@ -129,7 +129,11 @@ Given the challenges from technology evolution and analysis complexity,
 %FORTRAN-based tools.
 DIANA/HEP is building on and improving these
 community libraries, moving other existing software elements into
-community libraries, and developing additional new tools. We are also working to strengthen and grow the wider HEP software development community by building sustainable collaborations which extend beyond the DIANA/HEP project.
+community libraries, and developing additional new tools. 
+We are also working to strengthen and grow the wider HEP software 
+development community through a program of documentation, benchmarking,
+and education in order to build sustainable collaborations which 
+extend beyond the DIANA/HEP project.
 \end{block}
 \end{textblock}
 
@@ -144,7 +148,10 @@ community libraries, and developing additional new tools. We are also working to
 
 \begin{textblock}{22.5}(5.5,52.5)
 \textcolor{mybluelabel}{\bf Improved Performance} \\
-To reduce the time to scientific discovery and to enable more in-depth analyses, we are increasing the rate of access to ROOT data files. This includes streamlined access to simpler data types (uproot and BulkIO) and faster compression algorithms (LZ4 and ZSTD). These efforts have already provided factors-of-several improvements.
+To reduce the time to scientific discovery and to enable more in-depth analyses, we are
+increasing the rate of access to ROOT data files. This includes streamlined access to simpler
+data types (uproot and BulkIO) and faster compression algorithms (LZ4 and ZSTD). These
+efforts have already provided factors-of-several improvements.
 \end{textblock}
 
 \begin{textblock}{12.5}(29,53)
@@ -161,7 +168,12 @@ To reduce the time to scientific discovery and to enable more in-depth analyses,
 
 \begin{textblock}{22.5}(5.5,67.5)
 \textcolor{mybluelabel}{\bf Bridging to Big Data} \\
-``Big Data'' software in industry, such as the Spark and scientific Python ecosystems, both complement and reproduce functionality of software traditionally developed within HEP. To give physicists more options and reduce maintenance burdens within HEP, DIANA is building bridges between HEP software and the Big Data ecosystems: \href{https://github.com/diana-hep/spark-root}{Spark-ROOT} to Spark and \href{https://github.com/scikit-hep/uproot}{uproot}/\href{https://github.com/diana-hep/oamap}{OAMap} to Numpy, Numba, and Dask.
+``Big Data'' software in industry, such as the Spark and scientific Python ecosystems, both complement
+and reproduce functionality of software traditionally developed within HEP. To give physicists more
+options and reduce maintenance burdens within HEP, DIANA is building bridges between HEP software and
+the Big Data ecosystems: \href{https://github.com/diana-hep/spark-root}{Spark-ROOT} to Spark and
+\href{https://github.com/scikit-hep/uproot}{uproot}/\href{https://github.com/diana-hep/oamap}{OAMap}
+to Numpy, Numba, and Dask.
 \end{textblock}
 
 \begin{textblock}{12.5}(29,68.5)
@@ -175,8 +187,13 @@ To reduce the time to scientific discovery and to enable more in-depth analyses,
 %%%
 
 \begin{textblock}{23}(45.5,68)
-\textcolor{mybluelabel}{\bf High-Level Tools} \\
-Computing issues can get in the way of a focus on physics, especially for new students who must learn both at the same time. We are therefore striving to present HEP analysis with higher-level interfaces. \href{http://scikit-hep.org/}{Scikit-HEP} incorporates HEP techniques in Pythonic idioms, \href{https://github.com/scikit-hep/uproot}{uproot} provides access to ROOT data as Numpy and Pandas abstractions, and \href{https://github.com/diana-hep/oamap}{OAMap} compiles object-centric user code into fast array operations.
+\textcolor{mybluelabel}{\bf High-level Tools} \\
+Computing issues can get in the way of a focus on physics, especially for
+new students who must learn both at the same time. We are therefore striving
+to present HEP analysis with higher-level interfaces. \href{http://scikit-hep.org/}{Scikit-HEP}
+incorporates HEP techniques in Pythonic idioms, \href{https://github.com/scikit-hep/uproot}{uproot}
+provides access to ROOT data as Numpy and Pandas abstractions, and \href{https://github.com/diana-hep/oamap}{OAMap}
+compiles object-centric user code into fast array operations.
 \end{textblock}
 
 \begin{textblock}{12.0}(69.5,67)
@@ -191,9 +208,9 @@ Computing issues can get in the way of a focus on physics, especially for new st
 
 \begin{textblock}{22.5}(45.5,52.5)
 \textcolor{mybluelabel}{\bf New Statistical Techniques} \\
-We are developing of new tools and methods for
+We are developing new tools and methods for
 high-level statistical analysis in particle physics. Our activities
-include research and tools for simulator-based inference (\href{http://diana-hep.org/carl/}{Carl}), machine 
+include research and tools for simulator-based inference (\href{http://diana-hep.org/carl/}{Carl}), machine
 learning for particle physics (\href{https://scikit-optimize.github.io/}{Scikit-Optimize}), high-level software for efficient numerical
 computations, and education efforts in these respective domains.
 \end{textblock}
@@ -232,11 +249,12 @@ computations, and education efforts in these respective domains.
 \item Jinyang Li (Senior Personnel) - {\it New York Univ., Computer Science Dept.}
 \item David Abdurachmanov - {\it Univ. of Nebraska-Lincoln, Dept. of Computer Science and Engineering}
 \item David Lange - {\it Princeton Univ., Dept. of Physics}
-\item Gilles Louppe - {\it New York Univ., Dept. of Physics \& Center for Data Science}
+\item Vincent Croft - {\it New York Univ., Dept. of Physics}
 \item James Pivarski - {\it Princeton Univ., Dept. of Physics}
 \item Eduardo Rodrigues - {\it Univ. of Cincinnati, Dept. of Physics}
+\item Oksana Shadura - {\it Univ. of Nebraska-Lincoln, Dept. of Computer Science and Engineering}
 \item Zhe Zhang - {\it Univ. of Nebraska-Lincoln, Dept. of Computer Science and Engineering} (Ph.D.\ Student)
-\item Chien-Chin Huang - {\it New York Univ., Computer Science Dept.} (Ph.D.\ Student) 
+\item Chien-Chin Huang - {\it New York Univ., Computer Science Dept.} (Ph.D.\ Student)
 \end{itemize}
 \end{block}
 \end{textblock}
